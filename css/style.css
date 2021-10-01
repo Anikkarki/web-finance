@@ -7,9 +7,11 @@ background-color:#d6ddd4 ;
 box-sizing: border-box;
 font-family: sans-serif;
 }
+/*menu section*/
 .classynav{
 	background-color: aqua;
 	text-align: center;
+	height: 10vh;
 }
 .classynav ul{
 	display: inline-flex;
@@ -17,7 +19,7 @@ font-family: sans-serif;
 	color: black;
 }
 .classynav ul li{
-	width: 120px;
+	width: 140px;
 	margin: 15px;
 	padding: 15px;
 }
@@ -27,10 +29,28 @@ font-family: sans-serif;
 }
  .classynav ul li:hover
 {
-	color: #1a1db841;
 	background-color: #a0a19d;
-	border-radius: 3%;
+	border-radius: 6%;
 }
+.sub-menu-1
+{
+ display: none;
+}
+.classynav ul li:hover .sub-menu-1
+{ 
+	z-index: 1;
+	display: block;
+	position: absolute;
+	background-color: aqua;
+	margin-top: 15px;
+	margin-left: -10px;
+}
+.classynav ul li:hover .sub-menu-1 ul
+{
+	display: block;
+	margin: 10px;
+}
+/*menu section ends*/
 /*top info site*/
 .header-area .top-header-area {
     position: relative;
@@ -58,8 +78,56 @@ width: 50px;
 }
 
 /*top end*/
+
 /*slider*/
+.carousel-inner 
+{
+	color: black;
+}
+
 .carousel slide , img
 {
 	height: 80vh;
+}
+/*Slider ends*/
+.intro-ser-float
+{
+	display: flex;
+}
+.intro-sec
+{
+background-color: chocolate;
+height: 60vh;
+width: 48%;
+border-radius: 2%;
+margin: 1%;
+}
+.serv-sec
+{
+background-color: #1216df;
+width: 48%;
+height: 60vh;
+border-radius: 2%;
+margin: 1%;
+}
+/* Set the size of the div element that contains the map */
+.rate-home
+{
+	background-color: aquamarine;
+	width: 98%;
+	height: 50vh;
+	border-radius: 2%;
+	margin-bottom: 1%;
+	margin-left: 1%;
+	margin-right: 1%;
+}
+.container-footer
+{
+	display: flex;
+}
+.about-footer,.contact-footer, .serv-footer, .links-footer
+{
+	border: 3px solid #1216df;
+	width: 40%;
+	height: 20vh;
 }

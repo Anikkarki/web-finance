@@ -22,9 +22,17 @@
    <!--menu section start-->
         <div class="classynav">
             <ul>
-               <li class="active"><a href="/">Home</a></li>
-               <li><a href="@">About Us</a></li>
-               <li><a href=".">Loan</a></li>
+               <li class="active"><a href="home.php">Home</a></li>
+               <li><a href="aboutus.php">About Us</a></li>
+               <li><a href="loan.php">Loan</a>
+               <div class="sub-menu-1">
+                    <ul>
+                        <li><a href="">This</a> </li>
+                        <li><a href="">here</a></li>
+                        <li><a href="">that</a></li>
+                    </ul>
+                </div>
+                </li>
                <li><a href="$">Deposite</a></li>
                <li><a href="%">Services</a></li>
                <li><a href="!">Resources</a></li>
