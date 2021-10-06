@@ -30,16 +30,25 @@
                <div class="sub-menu-1">
                     <ul>
                         <li><a href="aboutus.php">Introduction</a> </li>
-                        <li><a href="">Management Team</a></li>
-                        <li><a href="">Share Capital</a></li>
+                        <li><a href="management.php">Management Team</a></li>
+                        <li><a href="share.php">Share Capital</a></li>
                         <li><a href="">consultant Team</a></li>
                     </ul>
                 </div>
             </li>
                <li><a href="loan.php" >Loan</a></li>
-               <li><a href="services.php">Services</a></li>
-               <li><a href="rate.php">Rate</a></li>
-               <li><a href="">Quick Link</a></li>
+               <li><a href="services.php">Services</a>
+               <div class="sub-menu-1">
+                    <ul>
+                        <li><a href="mudati.php">Mudati saving</a> </li>
+                        <li><a href="730days.php">730 days saving</a></li>
+                        <li><a href="">Nari Saving</a></li>
+                        <li><a href="">Nar-Nari Saving</a></li>
+                    </ul>
+                </div>
+            </li>
+               <li><a href="gallery.php">Gallery</a></li>
+               <li><a href="">News</a></li>
             </ul>
          </div>
 </header>
