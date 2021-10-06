@@ -4,39 +4,42 @@
                 <div class="row h-100 align-items-center">
                     <div class="col-12 d-flex justify-content-between">
                         <!-- Logo Area -->
-                        <div class="logo col-md-5 col-sm-12 col-xs-12">
-                          <a href="/"><img src="image/logo.svg" class="img-responsive"></a>
+                        <div class="logo-portion">
+                          <a href="home.php"><img src="image/logo1.jpeg" class="img-responsive">
+                          <h4 style="color:white;">OM Bindabasini Saving & Credit Co-operative LTD. </h4></a>
                         </div>
                         
                         <!-- Top Contact Info -->
-                        <div class="top-contact-info d-flex align-items-center  col-md-7 col-sm-12 col-xs-12">
-                            <a href="#" ><img class="logo1"src="image/location.svg" alt=""> <span>Location, Nepal </span></a>
-                            <a href="mailto:info@sfcl.com.np" ><img class="logo2" src="image/mail.svg" alt=""> <span>myemail@here.com.np</span></a>
-                            <a href="tel:057-525100, 01-4212099" style="margin-left: 20px" ; ><img class="logo3" src="image/call.svg" alt=""><span>Phone no here, 01-phn</span></a>
+                        <div class="top-contact-info d-flex align-items-center  col-md-5 col-sm-12 col-xs-12">
+                            <a href="#" ><img class="logo1"src="image/location.svg" alt=""> <span>Indrachowk ,Kathmandu </span></a>&nbsp;&nbsp;
+                            <a href="tel:014219095"data-original-title="01-4219095"><img class="logo2" src="image/call.svg" alt=""> <span>014219095</span></a>
+                        
                         </div>
                     </div>
                 </div>
             </div>
         </div>
    
+     
+
    <!--menu section start-->
         <div class="classynav">
             <ul>
                <li class="active"><a href="home.php">Home</a></li>
-               <li><a href="aboutus.php">About Us</a></li>
-               <li><a href="loan.php">Loan</a>
+               <li><a href="">About Us</a>
                <div class="sub-menu-1">
                     <ul>
-                        <li><a href="">This</a> </li>
-                        <li><a href="">here</a></li>
-                        <li><a href="">that</a></li>
+                        <li><a href="aboutus.php">Introduction</a> </li>
+                        <li><a href="">Management Team</a></li>
+                        <li><a href="">Share Capital</a></li>
+                        <li><a href="">consultant Team</a></li>
                     </ul>
                 </div>
-                </li>
-               <li><a href="$">Deposite</a></li>
-               <li><a href="%">Services</a></li>
-               <li><a href="!">Resources</a></li>
-               <li><a href="#">Rate</a></li>
+            </li>
+               <li><a href="loan.php" >Loan</a></li>
+               <li><a href="services.php">Services</a></li>
+               <li><a href="rate.php">Rate</a></li>
+               <li><a href="">Quick Link</a></li>
             </ul>
          </div>
 </header>

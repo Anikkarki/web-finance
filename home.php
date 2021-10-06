@@ -17,9 +17,18 @@
     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
   </div>
   <div class="carousel-inner">
-    <div class="carousel-item active">
+  <div class="carousel-item active">
+      <img src="image/5.jpg" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Bindabasani Finance</h5>
+        <p></p>
+      </div>
+    </div>
+    <div class="carousel-item">
       <img src="image/1.jpg" class="d-block w-100" alt="...">
       <div class="carousel-caption d-none d-md-block">
         <h5>First slide label</h5>
@@ -40,6 +49,14 @@
         <p>Some representative placeholder content for the third slide.</p>
       </div>
     </div>
+    <div class="carousel-item">
+      <img src="image/4.jpg" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Fourth slide label</h5>
+        <p>Some representative placeholder content for the Fourth slide.</p>
+      </div>
+    </div>
+    
   </div>
   <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -57,7 +74,16 @@
 <!--Introduction-->
 <div class="intro-sec">
   <u><h2 align=center>Introduction</h2></u>
-  <p></p>
+  <?php 
+$con = mysqli_connect('localhost','root','') or die(mysqli_error($con));
+mysqli_select_db($con,'finance') or die(mysqli_error($con));
+$query = "SELECT * FROM aboutus where Ab_title='Introduction'";
+$result = mysqli_query($con,$query)or die(mysqli_error($con));
+$arr = mysqli_fetch_array($result,MYSQLI_ASSOC);
+    ?>
+    <div class="about-intro-sec">
+ <?php echo $arr['Ab_content'];  ?>
+ </div>
 </div>
 <!--Introduction ends-->
 <!--SERVICE-->
