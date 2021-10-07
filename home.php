@@ -110,7 +110,42 @@ $arr = mysqli_fetch_array($result,MYSQLI_ASSOC);
 
 <!--rates sec-->
 <div class="rate-home">
-  
+<div class="contact_div">
+<br><br>
+<u><h2 align="center">Contact</h2></u>
+<hr>
+<form action="contact_validation.php" method="post">
+<div class="contact_form">
+<div class="login-user">
+            <input type="tel" class="input_form" name="subject" placeholder="Subject*" required="">
+        </div><br>
+    <div>
+        <textarea id="message" class="input_form" rows="4" name="message" type="text" placeholder="Your message *" required=""></textarea>
+    </div>
+    <div class="row">
+    <div class="login-user">
+            <input type="text" class="input_form" name="name" placeholder="Name*" required="">
+        </div>
+        <br>
+        <div class="login-user">
+            <input type="email" class="input_form" name="email" placeholder="E-mail*" required="">
+        </div>
+        <br>
+        <div class="login-user">
+            <input type="number" class="input_form" name="contact_number" placeholder="Mobile Number*" required="">
+        </div>
+        <br>
+        
+    </div>
+    <div>
+        <input type="submit" name="contact_submit" class="submit_button_contact" value="Submit">
+</div>
+
+</div></form>
+
+ 
+
+</div>
 </div>
 <!--rates sec ends-->
 

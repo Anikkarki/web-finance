@@ -1,15 +1,24 @@
+<?php
+session_start();
+if(!isset($_SESSION['admin_id'])){
+//   echo('hello');  
+  header('location: admin_login.php');
+}
+else{
+?> 
+
 <html>
     <head>
-        <title>Awadhhi Saving Scheme</title>
+        <title>Awadhi Saving Scheme</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
 	
 	<link rel="stylesheet" href="css/style.css">
   
 </head>
 <body>
-    <?php include('portion/menu.php'); ?>
+    <?php include('portion/menu_admin.php'); ?>
     <br><br>
-    <u><h2 align=center>Awadhhi SAVING</h2></u>
+    <u><h2 align=center>Awadhi SAVING</h2></u>
     
     <p></p>
     <div class="about-sec-tb">
@@ -17,6 +26,7 @@
   <tr>
       <th>Time Duration</th>
       <th>Intrest</th>
+      <th>Action</th>
   </tr>
     <?php 
 $con = mysqli_connect('localhost','root','') or die(mysqli_error($con));
@@ -28,7 +38,8 @@ while ($arr = mysqli_fetch_array($result,MYSQLI_ASSOC)) {
     ?>
     <tr>
       <td><?php echo $arr['time']; ?></td>
-      <td><?php echo $arr['intrest']; }?></td>
+      <td><?php echo $arr['intrest']; ?></td>
+      <?php echo "&nbsp;<td><a href='awadhi_update_page.php?id=".$arr['id']."'>EDIT</a>"; }?>
   </tr>
   
 
@@ -38,7 +49,8 @@ while ($arr = mysqli_fetch_array($result,MYSQLI_ASSOC)) {
 <p style="color:red; font-size:120%">Please visit our nearest branch for further detail</p>
 <br>
 </div>
-
-    <?php include('portion/footer.php'); ?>
 </body>
 </html>
+<?php
+}
+?>
