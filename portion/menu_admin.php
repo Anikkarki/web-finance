@@ -24,32 +24,22 @@
 
    <!--menu section start-->
         <div class="classynav">
-            <ul>
-               <li><a href="">About Us</a>
-               <div class="sub-menu-1">
-                    <ul>
-                        <li><a href="aboutus_admin.php">Introduction</a> </li>
-                        <li><a href="management_admin.php">Management Team</a></li>
-                        <li><a href="share_admin.php">Share Capital</a></li>
-                        <li><a href="consult_admin.php">consultant Team</a></li>
-                        <li><a href="contact_admin.php">Contact Us</a></li>
-                    </ul>
-                </div>
-            </li>
-               <li><a href="loan_admin.php" >Loan</a></li>
+            <ul>    
+               <li><a href="admin.php" >Loan</a></li>
                <li><a href="">Services</a>
                <div class="sub-menu-1">
                     <ul>
-                        <li><a href="mudati.php">Mudati saving</a> </li>
-                        <li><a href="730days.php">730 days saving</a></li>
-                        <li><a href="nari.php">Nari Saving</a></li>
-                        <li><a href="narnari.php">Nar-Nari Saving</a></li>
-                        <li><a href="awadhi.php">Awadhi Saving</a></li>
-                        <li><a href="kopila.php">Kopila Saving</a></li>
-                        <li><a href="365days.php">365 days Saving</a></li>
+                        <li><a href="mudati_admin.php">Mudati saving</a> </li>
+                        <li><a href="730days_admin.php">730 days saving</a></li>
+                        <li><a href="nari_admin.php">Nari Saving</a></li>
+                        <li><a href="narnari_admin.php">Nar-Nari Saving</a></li>
+                        <li><a href="awadhi_admin.php">Awadhi Saving</a></li>
+                        <li><a href="kopila_admin.php">Kopila Saving</a></li>
+                        <li><a href="365days_admin.php">365 days Saving</a></li>
                     </ul>
                 </div>
             </li>
+            <li><a href="aboutus_admin.php">Introduction</a> </li>
                <li><a href="gallery.php">Gallery</a></li>
                <li><a href="">News</a></li>
                <li><a href="core/logout_process.php" style="color:red;">LOGOUT</a></li>

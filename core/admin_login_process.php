@@ -2,9 +2,10 @@
 session_start();
 $user = $_POST['admin_id'];
 $password = $_POST['password'];
+$securepass=md5($password);
 $con = mysqli_connect('localhost','root','') or die(mysqli_error($con));
 mysqli_select_db($con,'finance') or die(mysqli_error($con));
-$query = "SELECT * FROM admin_table WHERE admin_id = '$user' AND password = '$password'";
+$query = "SELECT * FROM admin_table WHERE admin_id = '$user' AND password = '$securepass'";
 $result = mysqli_query($con,$query) or die(mysqli_error($con));
 if(mysqli_affected_rows($con)>0){
 	$_SESSION['admin_id'] = $user;
