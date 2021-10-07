@@ -89,7 +89,18 @@ $arr = mysqli_fetch_array($result,MYSQLI_ASSOC);
 <!--SERVICE-->
 <div class="serv-sec">
 <u><h2 align=center>Our Services</h2></u>
-<p></p>
+<div class="list-serv-sec">
+                    <ul>
+                        <li><a href="mudati.php">Mudati saving</a> </li>
+                        <li><a href="730days.php">730 days saving</a></li>
+                        <li><a href="nari.php">Nari Saving</a></li>
+                        <li><a href="">Nar-Nari Saving</a></li>
+                        <li><a href="awadhi.php">Awadhi Saving</a></li>
+                        <li><a href="kopila.php">Kopila Saving</a></li>
+                        <li><a href="365days.php">365 days Saving</a></li>
+                    </ul>
+
+</div>
 </div>
 <!--SERVICE end-->
 <br>

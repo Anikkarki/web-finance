@@ -16,18 +16,25 @@ $arr = mysqli_fetch_array($result,MYSQLI_ASSOC);
 </div>
                             </div>
                             <div name="blogs" class="blog">
-                                    <h3 class="heading" >LATEST BLOG POSTS</h3>
-                                    <h3>Post Title</h3>
-                                    <p>Admin,dominname.com</p> 
-                                    <p>Friday,6th April 5000</p>
-                                    <p>Nulla facillisi.ut fringilla.suspebdisse</p>
-                                    <p align="right"><a href="r1.html" style="color:0099FF;text-decoration: none;">Read more>></a></p>
-                                    
-                                    <h3>Post Title</h3>
-                                    <p>Admin,dominname.com</p> 
-                                    <p>Friday,6th April 5000</p>
-                                    <p>Nulla facillisi.ut fringilla.suspebdisse</p>
-                                    <p align="right"><a href="r1.html" style="color:0099FF;text-decoration: none;">Read more>></a></p>
+                                    <h3 class="heading" >LATEST NEWS</h3>
+                                    <?php 
+$con = mysqli_connect('localhost','root','') or die(mysqli_error($con));
+mysqli_select_db($con,'finance') or die(mysqli_error($con));
+$query = "SELECT * FROM news
+ORDER BY N_id DESC
+LIMIT 0, 2 ";
+$result = mysqli_query($con,$query)or die(mysqli_error($con));
+
+while ($arr = mysqli_fetch_array($result,MYSQLI_ASSOC)) {
+    ?>
+    <div class="about-sec-ab">
+   
+ <p class="containt"><?php echo $arr['N_img'];  ?></p>
+ </div>
+ <?php
+    }   
+?>
+                                   
                             </div>
                             <div name="blogs" class="link">
                 
@@ -37,13 +44,11 @@ $arr = mysqli_fetch_array($result,MYSQLI_ASSOC);
                                     <hr>
                                     <li><a href="loan.php">Loan</a></li>
                                     <hr>
-                                    <li><a href="service.php">Service</a></li>
+                                    <li><a href="365days.php">Service</a></li>
                                     <hr>
-                                    <li><a href="">Loream</a></li>
+                                    <li><a href="">Gallery</a></li>
                                     <hr>
-                                    <li><a href="">Loream</a></li>
-                                    <hr>
-                                    <li><a href="">Loream</a></li>
+                                    <li><a href="">News</a></li>
                                     <hr>
                                     </ul>
                 

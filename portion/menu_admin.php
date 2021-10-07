@@ -25,20 +25,19 @@
    <!--menu section start-->
         <div class="classynav">
             <ul>
-               <li class="active"><a href="home.php">Home</a></li>
                <li><a href="">About Us</a>
                <div class="sub-menu-1">
                     <ul>
-                        <li><a href="aboutus.php">Introduction</a> </li>
-                        <li><a href="management.php">Management Team</a></li>
-                        <li><a href="share.php">Share Capital</a></li>
-                        <li><a href="">consultant Team</a></li>
-                        <li><a href="contact.php">Contact Us</a></li>
+                        <li><a href="aboutus_admin.php">Introduction</a> </li>
+                        <li><a href="management_admin.php">Management Team</a></li>
+                        <li><a href="share_admin.php">Share Capital</a></li>
+                        <li><a href="consult_admin.php">consultant Team</a></li>
+                        <li><a href="contact_admin.php">Contact Us</a></li>
                     </ul>
                 </div>
             </li>
-               <li><a href="loan.php" >Loan</a></li>
-               <li><a href="services.php">Services</a>
+               <li><a href="loan_admin.php" >Loan</a></li>
+               <li><a href="">Services</a>
                <div class="sub-menu-1">
                     <ul>
                         <li><a href="mudati.php">Mudati saving</a> </li>
@@ -52,7 +51,8 @@
                 </div>
             </li>
                <li><a href="gallery.php">Gallery</a></li>
-               <li><a href="news.php">News</a></li>
+               <li><a href="">News</a></li>
+               <li><a href="core/logout_process.php" style="color:red;">LOGOUT</a></li>
             </ul>
          </div>
 </header>
