@@ -35,28 +35,29 @@ while ($arr = mysqli_fetch_array($result,MYSQLI_ASSOC)) {
     }   
 ?>
                                    
-                            </div>
-                            <div name="blogs" class="link">
+</div>
+
+<div name="blogs" class="link">
                 
-                                    <h3 class="heading">QUICK LINKS</h3>
-                                    <ul>
-                                    <li><a href="aboutus.php">About US</a></li>
-                                    <hr>
-                                    <li><a href="loan.php">Loan</a></li>
-                                    <hr>
-                                    <li><a href="365days.php">Service</a></li>
-                                    <hr>
-                                    <li><a href="">Gallery</a></li>
-                                    <hr>
-                                    <li><a href="">News</a></li>
-                                    <hr>
-                                    </ul>
+    <h3 class="heading">QUICK LINKS</h3>
+    <ul>
+    <li><a href="aboutus.php">About US</a></li>
+    <hr>
+    <li><a href="loan.php">Loan</a></li>
+    <hr>
+    <li><a href="365days.php">Service</a></li>
+    <hr>
+    <li><a href="">Gallery</a></li>
+    <hr>
+    <li><a href="">News</a></li>
+    <hr>
+    </ul>
                 
-                                </div>
+</div>
                                
-                        </div>
-                        <div name="main_footer" class="footer-rt">
-                            
-                            <p style="float: right">Templates by OS Templates</p>
-                            <p>Copyright@2013 Domain Name All rights Reserved.</p>
-                        </div>    
+</div>
+
+<div name="main_footer" class="footer-rt">                        
+    <p style="float: right">Templates by OS Templates</p>
+    <p>Copyright@2013 Domain Name All rights Reserved.</p>
+</div>    
