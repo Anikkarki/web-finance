@@ -64,15 +64,15 @@ font-family: sans-serif;
     position: relative;
     z-index: 1;
     width: 100%;
-    height: 80px;
-    background-color: #8ba08d;
+    /* height: 80px; */
+    background-color: white;
 }
 .header-area .top-header-area .top-contact-info {
     position: relative;
     z-index: 1;
 	align-content: right;
 }
-.top-contact-info d-flex align-items-center  col-md-7 col-sm-12 col-xs-12 , .logo1 , .logo2 , .logo3
+.top-contact-info align-items-center , .logo1 , .logo2 , .logo3
 {
 display: inline-flex;
 height: 20px;
@@ -175,7 +175,7 @@ width: 80%;
 /*footer*/
 .container-footer-here{
 	display: flex;
-    height: 70vh;
+    /* height: 70vh; */
     background-color: #1e6f46;
 	color: lavender;
 
@@ -201,7 +201,7 @@ flex: 2;
 {
 	background-color:#1e6f46;
 	width: 100%;
-    height: 50px;
+    /* height: 50px; */
     border: 1px solid #690a0e;
 	color: wheat;
 }
