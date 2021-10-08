@@ -114,40 +114,57 @@ $arr = mysqli_fetch_array($result,MYSQLI_ASSOC);
 <br><br>
 <u><h2 align="center">Contact</h2></u>
 <hr>
-<form action="contact_validation.php" method="post">
-<div class="contact_form">
-<div class="login-user">
-            <input type="tel" class="input_form" name="subject" placeholder="Subject*" required="">
-        </div><br>
-    <div>
-        <textarea id="message" class="input_form" rows="4" name="message" type="text" placeholder="Your message *" required=""></textarea>
+<div style="margin-left:20%;margin-right:20%; align-content:center;">
+<form action="core/contact_send_process.php" method="post">
+  <div class="contact_form">
+    
+    <!-- <div class="form-group">
+      <label for="inputAddress">Subject*</label>
+      <input type="text" class="form-control" id="inputAddress" placeholder="Subject*">
     </div>
-    <div class="row">
-    <div class="login-user">
-            <input type="text" class="input_form" name="name" placeholder="Name*" required="">
-        </div>
-        <br>
-        <div class="login-user">
-            <input type="email" class="input_form" name="email" placeholder="E-mail*" required="">
-        </div>
-        <br>
-        <div class="login-user">
-            <input type="number" class="input_form" name="contact_number" placeholder="Mobile Number*" required="">
-        </div>
-        <br>
-        
-    </div>
-    <div>
-        <input type="submit" name="contact_submit" class="submit_button_contact" value="Submit">
-</div>
+    <br>
 
-</div></form>
+    <div class="form-group">
+      <label for="inputAddress">Your Message*</label>
+      <textarea class="form-control" aria-label="With textarea"  placeholder="Your Message*"></textarea>
+    </div>
+    <br>
+
+    <div class="form-group">
+      <label for="inputEmail4">Email*</label>
+      <input type="email" class="form-control" id="inputEmail4"  placeholder="Email*">
+    </div>
+    <br>
+
+    <div class="form-group">
+      <label for="inputEmail4">Phone Number*</label>
+      <input type="email" class="form-control" id="inputEmail4"  placeholder="Phone Number*">
+    </div>
+    <br>
+    
+    <button type="submit" class="btn btn-primary">Sign in</button> -->
+
+
+    <input type="text" class="form-control" id="inputAddress" placeholder="Subject*" name="subject"><br>
+    <textarea class="form-control" aria-label="With textarea"  placeholder="Your Message*" name="message"></textarea><br>
+    <input type="email" class="form-control" id="inputEmail4"  placeholder="Email*"  name="email"><br>
+    <input type="text" class="form-control" id="phoneNumber"  placeholder="Phone Number*" name="phoneNumber"><br>
+
+      <div class="text-center">
+          <input type="submit" name="contact_submit" class="btn btn-primary" value="Submit">
+      </div>
+
+  </div>
+</form>
+</div>
 
  
 
 </div>
 </div>
 <!--rates sec ends-->
+
+<?php include('portion/map.php'); ?>
 
 <?php include('portion/footer.php'); ?>
 </body>
