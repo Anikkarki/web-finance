@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Oct 07, 2021 at 02:17 PM
+-- Generation Time: Oct 18, 2021 at 04:26 PM
 -- Server version: 10.4.14-MariaDB
 -- PHP Version: 7.2.33
 
@@ -85,6 +85,21 @@ CREATE TABLE `contact` (
 INSERT INTO `contact` (`id`, `type`, `detail`) VALUES
 (1, 'Call', '014219095'),
 (2, 'address', ' Indrachowk');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `contact_form`
+--
+
+CREATE TABLE `contact_form` (
+  `id` int(11) DEFAULT NULL,
+  `name` varchar(15) DEFAULT NULL,
+  `email` varchar(20) DEFAULT NULL,
+  `number` int(15) DEFAULT NULL,
+  `subject` varchar(20) DEFAULT NULL,
+  `message` varchar(300) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
 
@@ -461,7 +476,7 @@ ALTER TABLE `narnari_bachat`
 -- AUTO_INCREMENT for table `news`
 --
 ALTER TABLE `news`
-  MODIFY `N_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `N_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT for table `time_duration_bachat`

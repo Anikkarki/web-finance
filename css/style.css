@@ -30,9 +30,9 @@ font-family: sans-serif;
 }
  .classynav ul li:hover
 {
-	background-color: #690a0e;
+	color: #690a0e;
 	border-radius: 6%;
-	font-size: 15px;
+	font-size: 17px;
 }
 .sub-menu-1
 {
@@ -160,7 +160,7 @@ margin: 1vh;
 {
 	background-color: aquamarine;
 	width: 98%;
-	height: 50vh;
+	height: 80vh;
 	border-radius: 2%;
 	margin-bottom: 1%;
 	margin-left: 1%;

@@ -11,7 +11,7 @@
 
     <div class="d-flex flex-row flex-row justify-content-between align-items-center">
         <!-- Logo Area -->
-        <div class="logo-portion w-25">
+        <div class="logo-portion w-35">
             <a href="home.php">
                 <img src="image/logo1.jpeg" class="img-responsive">
                 <h5 style="color:white;">
@@ -22,7 +22,7 @@
 
 
         <!--menu section start-->
-        <div class="classynav d-flex align-items-center w-75  justify-content-end">
+        <div class="classynav d-flex align-items-center w-60  justify-content-end">
             <ul>
                 <li class="active"><a href="home.php">Home</a></li>
                 <li><a href="">About Us</a>
